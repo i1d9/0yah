@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body {
+    background-color: rgb(102, 102, 102);
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.projectLayout {
+
+    position: relative;
+    width: 80vw;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 25px;
+
+    .projectList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    
+    }
+
+    .productCard {
+        flex: 1;
+        background-color: green;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+.launchBar {
+    width: 75vw;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate( -50%, 0%);
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    height: 5vh;
+    .blurred {
+        height: 100%;
+        width: 100%;
+        filter: blur(3px);
+        background-color: rgb(199, 164, 164);
+        box-shadow: none;
+    }
+}
+
+.headBar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 2.5vh;
+    display: flex;
+    background-color: yellow;
+
+    .notificationBar{
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .timeBar{
+        position: absolute;
+        right: 0;
+        font-weight: bold;
+    }
+}
+
+.intro{
+    position: fixed;
+    height: 70vh;
+    width: 75vw;
+    background-color: blue;
+    border-radius: 10px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%,10%);
+}
