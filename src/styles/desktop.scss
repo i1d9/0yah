@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 body {
     background-color: rgb(102, 102, 102);
@@ -7,20 +6,16 @@ body {
 }
 
 .projectLayout {
-
     position: relative;
     width: 80vw;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     margin-top: 25px;
-
     .projectList {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px;
-    
     }
-
     .productCard {
         flex: 1;
         background-color: green;
@@ -48,36 +43,98 @@ body {
     }
 }
 
-.headBar{
+.headBar {
     position: fixed;
     top: 0;
     width: 100vw;
     height: 2.5vh;
     display: flex;
     background-color: yellow;
-
-    .notificationBar{
+    .notificationBar {
         padding: 10px;
         position: absolute;
         top: 0;
         z-index: -1;
         width: 100%;
     }
-
-    .timeBar{
+    .timeBar {
         position: absolute;
         right: 0;
         font-weight: bold;
     }
 }
 
-.intro{
+.intro {
     position: fixed;
     height: 70vh;
-    width: 75vw;
+    width: 50vw;
     background-color: blue;
-    border-radius: 10px;
+    border-radius: 5px;
     z-index: 1;
     left: 50%;
-    transform: translate(-50%,10%);
+    transform: translate(-50%, 10%);
+    .fileBar {
+        width: 100%;
+        background-color: grey;
+        padding: 1px;
+        height: 2.55%;
+        display: flex;
+        gap: 10px;
+        align-content: center;
+        span {
+            padding: 5px;
+            border-radius: 10px;
+            height: 1%;
+        }
+        span:first-child {
+            background-color: red;
+        }
+        span:nth-child(2) {
+            background-color: yellow;
+        }
+        span:last-child {
+            background-color: rgb(0, 255, 42);
+        }
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        height: 100%;
+        width: 100%;
+        
+        
+        .ProfileBrief {
+
+            background-color: gold;
+            grid-row: 2/4;
+            grid-column: 2/4;
+
+            
+        }
+        .ProfileIntro {
+            background-color: hotpink;
+            grid-row: 2/4;
+            grid-column: 1/2;
+            position: relative;
+
+            .profileImage{
+                position: absolute;
+                background-color: blue;
+                border-radius: 50%;
+                padding: 5px;
+                top:-10%;
+                left: 50%;
+                width: 7vw;
+                height: 7vw;
+                transform: translate(-50%,0);
+            }
+        }
+        .BackHeader {
+            background-color: lightcoral;
+            padding: 10px;
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+    }
 }
