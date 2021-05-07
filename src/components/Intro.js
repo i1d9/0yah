@@ -1,5 +1,11 @@
 import dp from '../img/dp.jpg';
 import header from '../img/header.jpg';
+import {ReactComponent as Github}  from '../img/github.svg';
+import {ReactComponent as Instagram} from '../img/instagram.svg';
+import {ReactComponent as Verify} from '../img/verify.svg';
+import {ReactComponent as Twitter} from '../img/twitter.svg';
+import {ReactComponent as Whatsapp} from '../img/whatsapp.svg';
+
 export const Intro = () =>{
     return <div className="intro">
         <div className="fileBar">
@@ -19,7 +25,6 @@ export const Intro = () =>{
                     <li>MongoDB</li>
                     <li>Python</li>
                     <li>Django</li>
-                    <li>GraphQL</li>
                 </ul>                    
                 </div>
 
@@ -33,11 +38,13 @@ export const Intro = () =>{
                     <span>Computer Science Student</span>
                     <span>Nairobi, Kenya</span>
                     <div className="profiles">
-                    <i class="bi bi-github"></i>
-                    <i class="bi-alarm"></i>
-                    <i class="bi bi-twitter"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-whatsapp"></i>
+                   
+                    <Github />
+                    <Instagram />
+                    
+                    <Twitter />
+                    <Whatsapp />
+
                     </div>
                 </div>
             </div>
