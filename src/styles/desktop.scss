@@ -6,9 +6,6 @@ body {
 }
 
 $dpImageWidth: 50%;
-
-
-
 .projectLayout {
     position: relative;
     width: 80vw;
@@ -17,7 +14,7 @@ $dpImageWidth: 50%;
     margin-top: 25px;
     .projectList {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 5px;
     }
     .productCard {
@@ -104,16 +101,19 @@ $dpImageWidth: 50%;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 2fr 2fr;
-        height: 100%;
-        width: 100%;
         .ProfileBrief {
             background-color: #252030;
             grid-row: 2/4;
             grid-column: 2/4;
             color: white;
             .skills {
-                ul {
-                    list-style: none;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                height: 100%;
+                width: 100%;
+                .skill {
+                    background-color: #121212;
+                    text-align: center;
                 }
             }
         }
@@ -129,8 +129,8 @@ $dpImageWidth: 50%;
                 width: 60%;
                 position: relative;
                 left: 50%;
-                transform: translate(-50%,0);
-                height:  auto;
+                transform: translate(-50%, 0);
+                height: auto;
                 img {
                     height: 100%;
                     width: 100%;
@@ -155,13 +155,10 @@ $dpImageWidth: 50%;
             grid-row: 1/2;
             grid-column: 1/4;
             //
-            background-image:  url("https://i.giphy.com/media/UYBDCJjwOd9Re/giphy.webp");
+            background-image: url("https://i.giphy.com/media/UYBDCJjwOd9Re/giphy.webp");
             span {
                 color: rgb(175, 174, 174);
-                
             }
         }
     }
 }
-
-

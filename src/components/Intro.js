@@ -1,12 +1,12 @@
 import dp from '../img/dp.jpg';
 import header from '../img/header.jpg';
-import {ReactComponent as Github}  from '../img/github.svg';
-import {ReactComponent as Instagram} from '../img/instagram.svg';
-import {ReactComponent as Verify} from '../img/verify.svg';
-import {ReactComponent as Twitter} from '../img/twitter.svg';
-import {ReactComponent as Whatsapp} from '../img/whatsapp.svg';
+import { ReactComponent as Github } from '../img/github.svg';
+import { ReactComponent as Instagram } from '../img/instagram.svg';
+import { ReactComponent as Verify } from '../img/verify.svg';
+import { ReactComponent as Twitter } from '../img/twitter.svg';
+import { ReactComponent as Whatsapp } from '../img/whatsapp.svg';
 
-export const Intro = () =>{
+export const Intro = () => {
     return <div className="intro">
         <div className="fileBar">
             <span></span>
@@ -16,21 +16,49 @@ export const Intro = () =>{
 
         <div className="content">
             <div className="ProfileBrief">
+                
+                <span>Skills</span>
                 <div className="skills">
-                    <span>Expertise</span>
-                <ul>
-                    <li>React</li>
-                    <li>Express</li>
-                    <li>React Native</li>
-                    <li>MongoDB</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                </ul>                    
+
+                    <div className="skill">
+
+                        <span>React </span>
+
+                    </div>
+
+                    <div className="skill">
+                        <span>React Native</span>
+
+                    </div>
+
+                    <div className="skill">
+
+                        <span>ExpressJs</span>
+
+                    </div>
+
+                    <div className="skill">
+
+
+                        <span>MongoDB</span>
+
+
+                    </div>
+                    <div className="skill">
+
+                        <span>Python</span>
+
+                    </div>
+                    <div className="skill">
+                        <span>Django</span>
+
+                    </div>
+
                 </div>
 
             </div>
             <div className="ProfileIntro">
-            <div className="profileImage">
+                <div className="profileImage">
                     <img src={dp} />
                 </div>
                 <div className="content">
@@ -38,19 +66,19 @@ export const Intro = () =>{
                     <span>Computer Science Student</span>
                     <span>Nairobi, Kenya</span>
                     <div className="profiles">
-                   
-                    <Github />
-                    <Instagram />
-                    
-                    <Twitter />
-                    <Whatsapp />
+
+                        <Github />
+                        <Instagram />
+
+                        <Twitter />
+                        <Whatsapp />
 
                     </div>
                 </div>
             </div>
             <div className="BackHeader">
-                
+
             </div>
         </div>
     </div>
-} 
+}
