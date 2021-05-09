@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/desktop.scss';
+import './styles/mobile.scss';
 import { Projects } from "./components/Projects";
 import { LaunchBar } from "./components/LaunchBar";
 import { Header } from "./components/Header";

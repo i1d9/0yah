@@ -5,11 +5,17 @@ import { ReactComponent as Instagram } from '../img/instagram.svg';
 import { ReactComponent as Verify } from '../img/verify.svg';
 import { ReactComponent as Twitter } from '../img/twitter.svg';
 import { ReactComponent as Whatsapp } from '../img/whatsapp.svg';
+import $ from 'jquery';
 
 export const Intro = () => {
+
+    const closeIntro = () =>{
+        $(".intro").fadeOut();
+    
+    }
     return <div className="intro">
         <div className="fileBar">
-            <span></span>
+            <span onClick={()=>closeIntro()}></span>
             <span></span>
             <span></span>
         </div>

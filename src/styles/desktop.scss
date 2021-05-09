@@ -12,17 +12,47 @@ $dpImageWidth: 50%;
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: 25px;
+
     .projectList {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    
+        flex-wrap: wrap;
+        .productCard {
+            position: relative;
+            
+            img{
+                height: auto;
+                width: 100%;
+            }
+    
+            .blur{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                
+                height: 100%;
+                background: rgba($color: #332940, $alpha: 0.70);
+                z-index: 0;
+                
+                
+            }
+            .content{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,0%);
+                font-size: 1.5em;
+                color: white;
+                z-index: 1;
+                
+            }
+        }
     }
-    .productCard {
-        flex: 1;
-        background-color: green;
-        padding: 5px;
-        border-radius: 5px;
-    }
+    
 }
 
 .launchBar {
@@ -67,6 +97,7 @@ $dpImageWidth: 50%;
 }
 
 .intro {
+    display: none;
     position: fixed;
     max-height: 70vh;
     background-color: #332940;
@@ -109,7 +140,6 @@ $dpImageWidth: 50%;
             .skills {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                height: 100%;
                 width: 100%;
                 .skill {
                     background-color: #121212;

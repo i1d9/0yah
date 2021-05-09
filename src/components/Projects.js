@@ -3,20 +3,40 @@ export const Projects =()=> {
         
         <div className="projectList">
         <div className="productCard">
-            lorem 
-        </div>
-
-        <div className="productCard">
-            lorem 
-        </div>
-        <div className="productCard">
-            lorem 
-        </div>
-        <div className="productCard">
-            lorem 
+            <img src="https://picsum.photos/700"/> 
+            <div className="blur">               
+            </div>
+            <div className="content">
+                <span>Project Title</span>
+                
+            </div>
         </div>
         <div className="productCard">
-            lorem 
+            <img src="https://picsum.photos/700"/> 
+            <div className="blur">               
+            </div>
+            <div className="content">
+                <span>Project Title</span>
+                
+            </div>
+        </div>
+        <div className="productCard">
+            <img src="https://picsum.photos/700"/> 
+            <div className="blur">               
+            </div>
+            <div className="content">
+                <span>Project Title</span>
+                
+            </div>
+        </div>
+        <div className="productCard">
+            <img src="https://picsum.photos/700"/> 
+            <div className="blur">               
+            </div>
+            <div className="content">
+                <span>Project Title</span>
+                
+            </div>
         </div>
         </div>
 
