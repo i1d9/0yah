@@ -1,3 +1,4 @@
+import React from 'react';
 import dp from '../img/dp.jpg';
 import header from '../img/header.jpg';
 import { ReactComponent as Github } from '../img/github.svg';

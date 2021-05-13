@@ -9,7 +9,6 @@ export const Projects =()=> {
             </div>
             <div className="content">
                 <span>Project Title</span>
-                
             </div>
         </div>
         <div className="productCard">
