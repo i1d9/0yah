@@ -14,8 +14,6 @@ body::-webkit-scrollbar{
     left: 50%;
     transform: translate(-50%, 0);
     margin-top: 50px;
-
-    
 }
 
 .projectLayout .projectWindow {
