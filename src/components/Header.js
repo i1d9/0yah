@@ -16,7 +16,7 @@ export const Header = () => {
         <div className="notificationBar"></div>
 
         <div className="brand">
-            <span>0yaah</span>
+            <span>0yah</span>
         </div>
 
         <div className="timeBar">
