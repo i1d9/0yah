@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body {
+    background-color: #121212;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.projectLayout {
+    position: relative;
+    width: 80vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 50px;
+}
+
+.projectLayout .projectWindow {
+    width: 80vw;
+    height: 85vh;
+    background-color: rgb(63, 63, 63);
+    border-radius: 5px;
+    color: white;
+}
+.projectLayout .projectWindow .controls{
+    width: 100%;
+    background-color: beige;
+    position: relative;
+    
+}
+.projectLayout .projectWindow .controls .window{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    align-items: flex-end;
+    justify-items: flex-end;
+    
+    
+}
+.projectLayout .projectWindow .controls .window span{
+    height: 15px;
+    width: 15px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    
+}
+
+.projectLayout .projectWindow .controls .window span:first-child{
+    background-color: red;
+    
+}
+
+.projectLayout .projectWindow .controls .window span:nth-child(2){
+    background-color: orange;
+    
+}
+
+.projectLayout .projectWindow .controls .window span:last-child{
+    background-color: green;
+    
+}
+
+.projectLayout .projectWindow .mainContent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+   gap: 5px;
+}
+
+
+.projectLayout .projectWindow .mainContent .menu{
+background-color: rgb(14, 20, 68);
+width: 100%;
+height: 81.5vh;
+}
+
+
+.projectLayout .projectWindow .mainContent .content{
+ 
+}
+
+.projectLayout .projectWindow .productCard img{
+    height: auto;
+    width: 100%;
+}
+
+.menuItem{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.menuItem input{
+    width: 90%;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    align-self: center;
+    color: white;
+    opacity: 0.95;
+
+}
+.menuItem .content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 5px;
+}
+
+.About{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  
+}
+
+.About .profileImage{
+    height: 60%;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,10px);
+}
+.About .profileImage .media {
+    background-image: url("https://i.giphy.com/media/UYBDCJjwOd9Re/giphy.webp");
+           
+    border-radius: 50%;
+
+}
+.About .profileImage .media img{
+    height: auto;
+    width: 100%;
+    
+  border-radius: 50%;
+
+}
+
+.About .content{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 5px;
+}
+
+
+.programmingTitle{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 7px;
+}
+
+.socialMedia{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin: 5px;
+    padding: 2px;
+    
+    justify-content: space-evenly;
+}
+
+.ProjectInfo{
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+}
+
+.ProjectImage img{
+    height: auto;
+    width: 90%;
+
+}
+
+.projectLink input{
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+}
+.launchBar {
+    width: 75vw;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate( -50%, 0%);
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    height: 5vh;
+    display: none;
+    
+}
+.launchBar .blurred {
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
+    background-color: #252030;
+    box-shadow: none;
+}
+
+.headBar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 2.5vh;
+    display: flex;
+    background-color: #333940;
+    color: white;
+    z-index: 5;
+    
+}
+
+.headBar .notificationBar {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+.headBar .timeBar {
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+}
+
+
+.intro {
+    display: none;
+    position: fixed;
+    max-height: 70vh;
+    background-color: #332940;
+    border-radius: 5px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    border: 1px solid grey;
+    font-size: 0.9em;
+    
+}
+
+
+
+.intro .fileBar {
+    background-color: #333940;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    
+}
+
+
+.intro .fileBar span {
+    padding: 5px;
+    border-radius: 10px;
+    height: 1%;
+}
+.intro .fileBar span:first-child {
+    background-color: red;
+}
+.intro .fileBar span:nth-child(2) {
+    background-color: yellow;
+}
+.intro .fileBar span:last-child {
+    background-color: rgb(0, 255, 42);
+}
+
+.intro .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    
+}
+
+.intro .content  .ProfileBrief {
+    background-color: #252030;
+    grid-row: 2/4;
+    grid-column: 2/4;
+    color: white;
+    
+}
+.intro .content  .ProfileBrief .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    
+}
+
+.intro .content  .ProfileBrief .skills .skill {
+    background-color: #121212;
+    text-align: center;
+}
+
+.intro .content  .ProfileIntro {
+    background-color: #1F1B24;
+    grid-row: 2/4;
+    grid-column: 1/2;
+    position: relative;
+    color: white;
+    padding: 5px;
+    
+}
+
+
+.intro .content  .ProfileIntro .profileImage {
+    border-radius: 50%;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: auto;
+    
+}
+
+.intro .content  .ProfileIntro .profileImage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.intro .content  .ProfileIntro .content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.intro .content  .ProfileIntro .content .profiles {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    
+}
+.intro .content  .ProfileIntro .content .profiles img {
+    color: wheat;
+}
+
+
+.intro .content  .BackHeader {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    
+    background-image: url("https://i.giphy.com/media/UYBDCJjwOd9Re/giphy.webp");
+    
+}
+
+.intro .content  .BackHeader span {
+    color: rgb(175, 174, 174);
+}
+
+#mobileControls{
+    display: none;
+}
